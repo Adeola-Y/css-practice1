@@ -4,41 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classes and ID's</title>
+    <title>Typography Principles</title>
     <style>
       body {
-        background-color: rgb(140, 154, 177);
-        color: darkblue;
+        line-height: 140%;
+        letter-spacing: 0.1rem;
+        word-spacing: normal;
       }
       h1 {
         text-align: center;
-        font-size: 40px;
+        font-size: 2rem;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+      div {
+        background-color: #faf9f6;
+        width: auto;
+        height: 200px;
+        border: 2px solid #d2b48c;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px 20px;
       }
       p {
-        font-size: 24px;
+        font-size: 1rem;
       }
       #styled-by-id {
         font-family: Georgia, "Times New Roman", Cambria, serif;
-        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-style: italic;
       }
-      /* this styles every ul that is in the nav to have no bullet points inside each list item in the ul*/
-      nav ul {
-        list-style: none;
-      }
+
       nav ul li {
         margin: 10px;
-        font-size: 20px;
+        font-size: 0.875rem;
         display: inline-block;
-      }
-      /* this is for the multiple elements with class of nav-link*/
-      .nav-link {
-        padding: 5px;
-        margin: 4px;
-        border: 2px;
-        border-color: black;
-        border-style: solid;
-        background-color: #191970;
-        color: #f5f5ff;
+        list-style: none;
       }
     </style>
   </head>
@@ -56,21 +58,22 @@
         <li>
           <a href="classes-and-ids.html" class="nav-link"> Classes and ID's</a>
         </li>
-        <li>
-          <a href="classes-and-ids.html" class="nav-link"> Classes and ID's</a>
-        </li>
+        <li><a href="div-and-span.html" class="nav-link">Divs and Spans</a></li>
         <li>
           <a href="typography.html" class="nav-link"> Typography Principles</a>
         </li>
       </ul>
     </nav>
     <main>
-      <h1>Classes and ID's</h1>
+      <h1>Typography Principles</h1>
 
-      <p id="styled-by-id">
-        This page shows the effects of giving an ID and styling that ID
-      </p>
-      <p>Does this paragraph have the same styling as my other one</p>
+      <div>
+        <h3 id="styled-by-id">To show Hierarchy in terms of writing</h3>
+        <p>
+          This paragraph shows the idea of hierarchy in terms of headings,
+          subheadings, and normal writing
+        </p>
+      </div>
     </main>
   </body>
 </html>
