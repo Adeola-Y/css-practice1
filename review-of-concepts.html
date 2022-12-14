@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potato Fan Page</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+    <!--Note: the below comment is an example of multiline comment-->
+    <!--
+      The three semantic tags that must be on 
+      Every page you create are header, main, and footer
+
+      Most Semantic Tags are containers. 
+      They need actual HTML elements inside them. 
+      Just putting text is incorrect
+      the exception is figcaption
+    -->
+    <header>
+      <h1>Classic Rock Fan Page</h1>
+      <nav>
+        <ul>
+          <li><a href="review-of-concepts.html">Home Page</a></li>
+          <li><a href="the-beatles.html">The Beatles</a></li>
+          <li><a href="eric-clapton.html">Eric Clapton</a></li>
+          <li><a href="kiss">KISS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 
+        We create sections for areas of related content
+      -->
+      <section>
+        <!--inside semantic tags we can use divs to further group content-->
+        <div>
+          <!--NEVER ADD A SPAN TO WRAP AROUND ALL THE CONTENT OF AN ELELMENT-->
+          <h2>What Is Classic Rock?</h2>
+          <p>
+            "<span id="definition">Classic Rock</span> is an US radio format
+            which developed from the album oriented rock (AOR) format in the
+            early 1980's. In the United States, the classic rock format
+            comprises rock music ranging generally from the mid-1960's through
+            the mid 1990's."
+            <a
+              href="https://en.wikipedia.org/wiki/Classic_rock"
+              target="_blank">
+              -Wikipedia
+            </a>
+          </p>
+        </div>
+        <figure>
+          <figcaption>
+            The image below is an image of influential classic rock musicians
+            (starting from the left)
+            <span class="musician-name">Keith Richards</span>,
+            <span class="musician-name">Steven Tyler </span>,
+            <span class="musician-name"> Angus Young </span>, and
+            <span class="musician-name">Jimmy Page </span>.
+          </figcaption>
+          <img
+            src="images/influention-people.jpg"
+            alt="An image of four influential classic rock musicians.
+              The image is split into vertical sections. 
+              The first section is of keith richards from rolling stones. 
+              The second section is of steven tyler from aerosmith.
+              the third section is of angus young from AC/DC. 
+              The fourth section is of Jimmy Page from Led Zeppelin." />
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <!--This is the correct way to put content inside a cointainer-->
+      <p>&#169; Adeola Yusuf</p>
+    </footer>
+  </body>
+</html>

@@ -1,14 +1,28 @@
-body {
-  background-color: #d2b48c;
-  color: #18191a;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-  text-align: center;
-}
-p {
-  font-size: 24px;
+* {
+  margin: 0;
+  line-height: 140%; /* THIS WILL STYLE ELEMENTS TO HAVE LINE SPACING OF 140% and have no space around the edges OF THE FONT SIZE OF THE ELEMENT*/
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* this will style the element to have a default font size of 62.5% of the default font size of the browser*/
 }
+/* 
+This styles the body element to have a background colo rof #121212,
+ which will be the main background color for the entire website 
+ the element color changes the font color to #ededed which is a off 
+ whitestyle the body element and all elementsthat inherit from the body
+ styling to change their font size to 1.8 times the size of the root elements 
+ font sizeand to use Arial font before using helvetica font if neither font is 
+ available,the browsr will usethe default sans-serif font
+ */
+body {
+  background-color: #121212;
+  color: #ededed;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  margin: 0 5%; /* this styles the section that holds al of my important info
+  to have no spacing on the top and bottom of the section and 
+  spacing that is equal to five percent of the width of the 
+  browser window on the left and right sides of the section*/
+} /* to add comments pre

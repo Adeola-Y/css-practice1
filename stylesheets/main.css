@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  line-height: 140%; /* THIS WILL STYLE ELEMENTS TO HAVE LINE SPACING OF 140% and have no space around the edges OF THE FONT SIZE OF THE ELEMENT*/
+}
+html {
+  font-size: 62.5%; /* this will style the element to have a default font size of 62.5% of the default font size of the browser*/
+}
+/* 
+This styles the body element to have a background colo rof #121212,
+ which will be the main background color for the entire website 
+ the element color changes the font color to #ededed which is a off 
+ whitestyle the body element and all elementsthat inherit from the body
+ styling to change their font size to 1.8 times the size of the root elements 
+ font sizeand to use Arial font before using helvetica font if neither font is 
+ available,the browsr will usethe default sans-serif font
+ */
+body {
+  background-color: #121212;
+  color: #ededed;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  margin: 0 5%; /* this styles the section that holds al of my important info
+  to have no spacing on the top and bottom of the section and 
+  spacing that is equal to five percent of the width of the 
+  browser window on the left and right sides of the section*/
+} /* to add comments pres control slash*/
+section div {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  padding: 21.5% 3%;
+  background-color: #ededed;
+  color: #121212;
+}
+section figure {
+  display: inline-block;
+  width: 50%;
+}
+/* This styles all the elements with span for the text to be bold
+inside the element*/
+span {
+  font-weight: bold;
+}
+#definition {
+  text-decoration: underline; /* this styles the element with an ID of definition 
+  to underline all the text inside the element.*/
+}
+/* this styles the nav element so that the background of the element will have a color of #800808 */
+nav {
+  background-color: #800808;
+}
+/* this styles the unordered list element to have zero padding and no list style */
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+/* this styles the list in the nav to have 5px of margin 
+on top and bottom while it displays as a inline block element
+so multiple words can be beside each other */
+nav li {
+  margin: 5px 0;
+  display: inline-block;
+}
+/* this styles the anchor in the nav element to display as a 
+inline block have a height of 95% have 15px of adding on the top
+and bottom while 25px on the left and right with the background 
+of the element to have a color of #121212 with the text to
+have a color of #ededed. with no text dec */
+nav a {
+  display: inline-block;
+  height: 95%;
+  padding: 15px 25px;
+  background-color: #121212;
+  color: #ededed;
+  text-decoration: none;
+}
+/* this will style the anchor when a mouse is over it or tabs through it 
+to have a background color of #ededed and text color to #121212 */
+nav a:hover,
+nav a:focus {
+  background-color: #ededed;
+  color: #121212;
+}
+/* this will style the anchor when a mouse clicks and hold the element to be even more bold over top */
+nav a:active {
+  font-weight: bolder;
+}
+/* the element h1 will be styles the header so it has a margn on tio to have 30px
+change the text color to #f55959 with the font size to have a size of 4.8 rem 
+and moving the text to be centered adds a padding of 20px a background color 
+of off white and the text color to a dark red a font size of 4.8 rem with
+text being aligned to the center and a text shadow of 121212 with a 
+horizontal offset of 3px vertical of 1px and blur of 5px*/
+h1 {
+  margin-top: 50px 0;
+  padding: 20px 0;
+  background-color: #ededed;
+  color: #f55959;
+
+  font-size: 4.8rem;
+  text-align: center;
+  text-shadow: #121212 3px 1px 5px;
+}
+.musician-name {
+  font-style: italic; /*this styles the elements with class musician-name to be italized inside the element*/
+}
