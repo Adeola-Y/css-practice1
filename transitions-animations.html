@@ -20,6 +20,31 @@
           #753a88,
           #cc2b5e
         ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* this styling is used to create the state before anmatio occurs */
+        opacity: 0;
+        transform: translateY(-100px);
+
+        /* defines our animation animation duration, animation timeing function as ease-in, 
+        animation delay, animation fill mode whether the styling is kept at the end of the 
+        animation or not to fowards which means to keep the styling at the end of the animation 
+        other animation properties that we do not define in this example are: animation-iteration-count- 
+        how many times you want it to run animation direction-do you want your animation to go forward?  
+        backward or both? 
+        */
+        -o-animation: fade-in 1s ease-in-out 2s forwards;
+        -moz-animation: fade-in 1s ease-in-out 2s forwards;
+        -webkit-animation: fade-in 1s ease-in-out 2s forwards;
+        animation: fade-in 1s ease-in 2s forwards;
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
       h1 {
         text-align: center;
@@ -51,6 +76,9 @@
         display: inline-block;
         list-style: none;
       }
+      nav li {
+        display: inline-block;
+      }
       /* the start of the transitions */
       nav a:hover,
       nav a:focus {
@@ -69,6 +97,39 @@
         -webkit-transition: background-color 0.5s ease-in-out,
           color 0.5s ease-in-out;
         transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+      }
+      .ball {
+        width: 30px;
+        height: 30px;
+        background: rebeccapurple;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .ball::after {
+        animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.4);
+          opacity: 0.4;
+        }
+      }
+
+      .ball::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: blueviolet;
+        border-radius: 50%;
+        z-index: -1;
       }
     </style>
   </head>
@@ -90,10 +151,15 @@
         <li>
           <a href="typography.html" class="nav-link"> Typography Principles</a>
         </li>
+        <li>
+          <a href="transitions-and-animations-html" class="nav-link">
+            Transitions and Animations
+          </a>
+        </li>
       </ul>
     </nav>
     <main>
-      <h1>Divs and Spans</h1>
+      <h1>Transitions</h1>
       <!-- this is not the proper way to use the Div because I have not used all proper semantic tags-->
       <div>
         <!--div is short for division and is a block element that acts like a container for multiple block elements-->
@@ -105,6 +171,7 @@
           <!--this is the purpose of span which is an in-line element. can be used to style specific words or sets of words-->
         </p>
       </div>
+      <div class="ball"></div>
     </main>
   </body>
 </html>
